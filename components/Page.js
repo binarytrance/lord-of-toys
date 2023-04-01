@@ -1,4 +1,4 @@
-import { createGlobalStyle } from 'styled-components';
+import styled, { createGlobalStyle } from 'styled-components';
 import Header from './Header';
 
 const GlobalStyles = createGlobalStyle`
@@ -53,8 +53,8 @@ export default function Page({ children }) {
   return (
     <>
       <GlobalStyles />
-      <Header>I am nav</Header>
-      {children}
+      <Header />
+      <InnerStyles>{children}</InnerStyles>
     </>
   );
 }

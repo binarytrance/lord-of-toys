@@ -1,5 +1,6 @@
 import Link from 'next/link';
 import styled from 'styled-components';
+import Nav from './Nav';
 
 const Logo = styled.h1`
   font-size: 4rem;
@@ -40,6 +41,7 @@ function Header() {
           <Logo>Lord of Toys</Logo>
         </Link>
       </div>
+      <Nav />
       <div className="sub-par" />
     </HeaderStyles>
   );
